@@ -1,0 +1,18 @@
+
+# Can players craft a builder
+construct.enable_craft (Enable Craft) bool true
+
+# Total number of nodes cubed that a builder can interact with
+# Must be an odd number (builder's read assuming they are in the middle of the build)
+construct.max_size (Max Alloc Size) int 49
+
+# Can players Download or Upload build data
+# See construct.limit_file_storage to block Uploading
+# This option affects Download and Upload
+construct.allow_file_storage (Allow File-Storage) bool true
+
+# Prevents players from Uploading (the button won't be there)
+# This simply stops Uploading, Downloading still will work provided
+# construct.allow_file_storage is enabled
+# This option affects Upload
+construct.limit_file_storage (Limit File-Storage) bool false
